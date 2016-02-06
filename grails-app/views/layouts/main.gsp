@@ -10,14 +10,15 @@
 
     <asset:stylesheet src="application.css"/>
     <asset:link rel="icon" href="favicon.ico" type="image/x-ico" />
+    <asset:javascript src="jquery-2.2.0.min.js"/>
+    <asset:javascript src="grooscript-grails.js"/>
 
     <g:layoutHead/>
 </head>
 <body>
 
     <g:layoutBody/>
-
-    <asset:javascript src="application.js"/>
+    <asset:deferredScripts/>
 
 </body>
 </html>
