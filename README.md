@@ -15,3 +15,6 @@ tools in a grails 3 application.
 You can clone this repository and run the grails 3.1 application to see all this features in action:
 
 * Use groovy code in your gsp's.
+* Convert your groovy code to javascript with gradle plugin.
+* Listen to changes in your groovy files to "re-convert" to javascript code in development.
+* Use your converted files in your gsp's.

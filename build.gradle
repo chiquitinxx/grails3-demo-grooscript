@@ -24,6 +24,7 @@ apply plugin: "org.grails.grails-web"
 apply plugin: "org.grails.grails-gsp"
 apply plugin: "asset-pipeline"
 apply plugin: 'org.grooscript.conversion'
+apply from: "$rootDir/gradle/grooscript.gradle"
 
 ext {
     grailsVersion = project.grailsVersion

@@ -2,3 +2,4 @@
 .idea
 build
 .asscache
+grails-app/assets/javascripts/generated

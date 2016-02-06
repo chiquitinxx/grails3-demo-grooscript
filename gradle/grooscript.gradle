@@ -1,0 +1,9 @@
+grooscript {
+    source = ['src/main/groovy/gs']
+    destination = 'grails-app/assets/javascripts/generated'
+    initialText = '//Grooscript converted file'
+}
+
+bootRun.dependsOn 'convertThread'
+
+assetCompile.dependsOn 'convert'
