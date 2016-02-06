@@ -10,18 +10,20 @@ buildscript {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
         classpath "com.bertramlabs.plugins:asset-pipeline-gradle:2.5.0"
         classpath "org.grails.plugins:hibernate4:5.0.0"
+        classpath 'org.grooscript:grooscript-gradle-plugin:1.2.2'
     }
 }
 
 version "0.1"
 group "grails3.demo.grooscript"
 
-apply plugin:"eclipse"
-apply plugin:"idea"
-apply plugin:"war"
-apply plugin:"org.grails.grails-web"
-apply plugin:"org.grails.grails-gsp"
-apply plugin:"asset-pipeline"
+apply plugin: "eclipse"
+apply plugin: "idea"
+apply plugin: "war"
+apply plugin: "org.grails.grails-web"
+apply plugin: "org.grails.grails-gsp"
+apply plugin: "asset-pipeline"
+apply plugin: 'org.grooscript.conversion'
 
 ext {
     grailsVersion = project.grailsVersion
