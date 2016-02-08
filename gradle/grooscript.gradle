@@ -4,6 +4,12 @@ grooscript {
     initialText = '//Grooscript converted file'
 }
 
-bootRun.dependsOn 'convertThread'
+templates {
+    templatesPath = 'grails-app/views/gtpl'
+    templates = ['list-links.gml']
+    destinationFile = 'grails-app/assets/javascripts/generated/Templates.js'
+}
 
-assetCompile.dependsOn 'convert'
+bootRun.dependsOn 'convertThread', 'templatesThread'
+
+compileGroovy.dependsOn 'convert', 'templatesJs'

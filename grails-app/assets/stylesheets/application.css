@@ -23,3 +23,12 @@ p {
     font-size: 4em;
     padding: 30px;
 }
+
+.list-links {
+    list-style-type: none;
+    text-align: left;
+}
+
+footer {
+    margin-top: 50px;
+}
