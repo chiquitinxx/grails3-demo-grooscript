@@ -17,7 +17,7 @@
         ])
     </grooscript:code>
 
-   <asset:javascript src="generated/Hello"/>
+    <asset:javascript src="generated/Hello"/>
     <grooscript:code>
         import gs.Hello
 

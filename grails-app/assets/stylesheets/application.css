@@ -32,3 +32,37 @@ p {
 footer {
     margin-top: 50px;
 }
+
+#all-cubes {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 50px;
+}
+
+#all-cubes td {
+    border:solid 1px;
+    border-color: white;
+}
+
+.cube {
+    width: 20px;
+    height: 20px;
+}
+
+.navy { background-color: #001F3F; }
+.blue { background-color: #0074D9; }
+.aqua { background-color: #7FDBFF; }
+.teal { background-color: #39CCCC; }
+.olive { background-color: #3D9970; }
+.green { background-color: #2ECC40; }
+.lime { background-color: #01FF70; }
+.yellow { background-color: #FFDC00; }
+.orange { background-color: #FF851B; }
+.red { background-color: #FF4136; }
+.fuchsia { background-color: #F012BE; }
+.purple { background-color: #B10DC9; }
+.maroon { background-color: #85144B; }
+.white { background-color: #FFFFFF; }
+.silver { background-color: #DDDDDD; }
+.gray { background-color: #AAAAAA; }
+.black { background-color: #111111; }
