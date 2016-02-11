@@ -8,16 +8,15 @@ import org.springframework.messaging.simp.SimpMessagingTemplate
 class SquaresController {
 
     SimpMessagingTemplate brokerMessagingTemplate
-    Cubes cubes
+    private Cubes cubes
 
     def index() {
 
     }
 
     def reset() {
-        if (cubes) {
-            cubes = null
-        }
+        cubes = null
+        render 'ok'
     }
 
     @MessageMapping("/colors")
@@ -34,7 +33,7 @@ class SquaresController {
 
     private getGame() {
         if (cubes == null) {
-            cubes = new Cubes(10, 10)
+            cubes = new Cubes(20, 40)
         }
         cubes
     }

@@ -10,6 +10,14 @@ templates {
     destinationFile = 'grails-app/assets/javascripts/generated/Templates.js'
 }
 
-bootRun.dependsOn 'convertThread', 'templatesThread'
+spy {
+    files = ['grails-app/assets/stylesheets/application.css',
+            'grails-app/views/reload/index.gsp']
+    onChanges = { list ->
+        springWebsocketTo 'http://localhost:8080/stomp' data 'reload' onChannel '/app/reload'
+    }
+}
+
+bootRun.dependsOn 'convertThread', 'templatesThread', 'spyChanges'
 
 compileGroovy.dependsOn 'convert', 'templatesJs'

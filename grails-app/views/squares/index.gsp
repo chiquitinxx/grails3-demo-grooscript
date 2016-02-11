@@ -27,7 +27,6 @@
     </grooscript:onServerEvent>
 
     <grooscript:onServerEvent path="/topic/touch">
-        println 'Touched: ' + data
         $('#row-'+data.row+'-'+data.column).removeClass().addClass('cube ' + colors[data.color])
     </grooscript:onServerEvent>
 
@@ -38,15 +37,10 @@
                     row.eachWithIndex { color, j ->
                         td(id: 'row-' + i + '-' + j,
                             class: 'cube ' + colors[color],
-                            onclick: 'touch(' + i + ', ' + j + ')')
+                            onmouseover: 'touch(' + i + ', ' + j + ')')
                     }
                 }
             }
-        }
-    </grooscript:template>
-    <grooscript:template functionName="errorMessage" onLoad="false" itemSelector="body">
-        p(class: 'error') {
-            yield data
         }
     </grooscript:template>
 </body>

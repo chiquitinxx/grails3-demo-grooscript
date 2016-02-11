@@ -49,6 +49,10 @@ footer {
     height: 20px;
 }
 
+.reload-message {
+    margin-top: 50px;
+}
+
 .navy { background-color: #001F3F; }
 .blue { background-color: #0074D9; }
 .aqua { background-color: #7FDBFF; }
