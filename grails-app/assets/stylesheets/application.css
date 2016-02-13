@@ -39,6 +39,10 @@ footer {
     margin-top: 50px;
 }
 
+.row ul {
+    padding: 0px;
+}
+
 #all-cubes td {
     border:solid 1px;
     border-color: white;
