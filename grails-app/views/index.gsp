@@ -29,7 +29,8 @@
 
         $('#controllers').html Templates.applyTemplate('list-links.gml', [title: 'Controllers', list: [
             [url: '${g.createLink(controller: 'squares')}', text: 'Squares Websockets'],
-            [url: '${g.createLink(controller: 'reload')}', text: 'Reloading on Changes']
+            [url: '${g.createLink(controller: 'reload')}', text: 'Reloading on Changes'],
+            [url: '${g.createLink(controller: 'components')}', text: 'Components']
         ]])
     </grooscript:code>
 
