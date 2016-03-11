@@ -18,3 +18,8 @@ You can clone this repository and run the grails 3.1 application to see all this
 * Convert your groovy code to javascript with gradle plugin.
 * Listen to changes in your groovy files to "re-convert" to javascript code in development.
 * Use your converted files in your gsp's.
+* Create html code with a groovy dsl and use in the client.
+* React to websocket events in the client with groovy.
+* Reload the page when a file changes.
+* Use groovy markup templates in javascript.
+* Create webcomponents in groovy.
