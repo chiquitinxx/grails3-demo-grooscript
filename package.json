@@ -1,0 +1,26 @@
+{
+  "name": "grails3-demo-grooscript",
+  "version": "0.0.1",
+  "description": "Grooscript grails 3 demo",
+  "dependencies": {
+    "phantomjs": "^1.9.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiquitinxx/grails3-demo-grooscript.git"
+  },
+  "keywords": [
+    "grooscript",
+    "grails",
+    "gradle",
+    "groovy",
+    "javascript"
+  ],
+  "author": "Jorge Franco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chiquitinxx/grails3-demo-grooscript/issues"
+  },
+  "homepage": "https://github.com/chiquitinxx/grails3-demo-grooscript#readme"
+}
